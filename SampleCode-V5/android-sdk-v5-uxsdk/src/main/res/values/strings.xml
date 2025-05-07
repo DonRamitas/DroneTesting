@@ -857,7 +857,6 @@
     <string name="uxsdk_payload_setting_title">Payload Settings</string>
 
 
-
     <string name="uxsdk_dialog_loading">Loading...</string>
 
     <!--MapView-->
@@ -909,8 +908,6 @@
     <string name="uxsdk_setting_menu_perception_apas_off_dialog_content">When disabled, horizontal, upward, and downward obstacle avoidance are unavailable. Aircraft will not automatically brake when obstacles are detected. Alerts still received for detected obstacles. Continue?</string>
     <string name="uxsdk_setting_menu_perception_break_s_mode">Aircraft in %1$s mode. Unable to brake. Switch to N mode</string>
     <string name="uxsdk_setting_menu_perception_apas_s_mode">Aircraft in %1$s mode. Unable to bypass. Switch to N mode</string>
-
-
 
 
     <!--General Widget-->
@@ -1024,7 +1021,7 @@
     <string name="uxsdk_setting_ui_redundancy_sensor_compass_stat_2">Calibrating…</string>
     <string name="uxsdk_setting_ui_redundancy_sensor_compass_stat_3">Not Calibrated</string>
     <string name="uxsdk_setting_ui_redundancy_sensor_compass_stat_4">Data Error</string>
-    <string name="uxsdk_setting_ui_redundancy_sensor_compass_stat_empty"/>
+    <string name="uxsdk_setting_ui_redundancy_sensor_compass_stat_empty" />
     <string name="uxsdk_setting_ui_redundancy_sensor_compass_stat_8">Calibration Failed</string>
     <string name="uxsdk_setting_ui_redundancy_sensor_compass_stat_9">Direction Error</string>
     <string name="uxsdk_setting_ui_redundancy_sensor_compass_stat_action_0">Restart Aircraft</string>
@@ -1151,7 +1148,6 @@
     <string name="uxsdk_setting_ui_rc_calibration_stick_desc">Move control sticks gently to fill out the square with the ball\'s trajectories.</string>
     <string name="uxsdk_setting_ui_rc_calibration_wheel_desc">Turn the left and right dials to the maximum repeatedly.</string>
     <string name="uxsdk_setting_ui_rc_plus_calibration_1">Slowly move both control sticks through their entire range of motion</string>
-
 
 
     <string name="uxsdk_fpv_checklist_calibration_success">Compass Calibrated.</string>

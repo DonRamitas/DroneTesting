@@ -21,6 +21,7 @@ import dji.sampleV5.aircraft.util.ToastUtils
 import dji.v5.utils.common.LogUtils
 import dji.v5.utils.common.PermissionUtil
 import dji.v5.utils.common.StringUtils
+import dji.v5.ux.sample.showcase.test.TestActivity
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 
 /**
@@ -184,6 +185,10 @@ abstract class DJIMainActivity : AppCompatActivity() {
 
     fun <T> enableTestingTools(cl: Class<T>) {
         enableShowCaseButton(binding.testingToolButton, cl)
+    }
+
+    fun <T> enableTest(cl: Class<T>) {
+        enableShowCaseButton(binding.testButton, cl)
     }
 
     private fun <T> enableShowCaseButton(view: View, cl: Class<T>) {

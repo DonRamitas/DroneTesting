@@ -6,4 +6,10 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
+    <application>
+        <activity
+            android:name=".sample.showcase.test.TestActivity"
+            android:exported="false" />
+    </application>
+
 </manifest>
