@@ -5,6 +5,16 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
+    <!-- Widget FPV del UXSDK -->
+    <dji.v5.ux.core.widget.fpv.FPVWidget
+        android:id="@+id/fpv_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
     <androidx.core.widget.NestedScrollView
         android:id="@+id/stick_button_list"
         android:layout_width="0dp"
@@ -154,5 +164,34 @@
         app:layout_constraintStart_toEndOf="@+id/stick_button_list"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.8" />
+
+
+
+    <!-- Widget TopBar del UXSDK -->
+    <dji.v5.ux.core.panel.topbar.TopBarPanelWidget
+        android:id="@+id/top_bar_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Contenedor para el fragmento de Virtual Stick (que ya existe en sample) -->
+    <FrameLayout
+        android:id="@+id/virtual_stick_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Botón para mostrar/ocultar el panel de Virtual Stick -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_virtual_stick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_menu_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
